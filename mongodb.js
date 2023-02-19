@@ -39,7 +39,7 @@ MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) =>
 //  console.log(result.ops)
 // })
 
-db.collection('tasks').findOne({description: 'Renew inspection'}, (error, task) => {
+db.collection('users').findOne({name: 'Jeff'}, (error, task) => {
 
     if (error) {
         return console.log('record not found')
